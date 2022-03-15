@@ -2,7 +2,8 @@ import { Construct } from 'constructs';
 import {
   aws_s3 as s3,
   aws_cloudfront as cloudfront,
-  CfnOutput
+  CfnOutput,
+  DockerImage
 } from 'aws-cdk-lib';
 import * as cwt from 'cdk-webapp-tools';
 import * as apigv2 from '@aws-cdk/aws-apigatewayv2-alpha';
@@ -68,7 +69,8 @@ export class WebAppHosting extends Construct {
       buildCommand: 'yarn build',
       buildDirectory: 'build',
       bucket: hostingBucket,
-      prune: false
+      prune: false,
+      dockerImage: DockerImage.fromRegistry('public.ecr.aws/docker/library/node:16')
     });
 
     new CfnOutput(this, 'URL', {
