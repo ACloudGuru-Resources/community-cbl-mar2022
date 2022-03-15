@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="tag-line">
         <a href="http://cloudbuilder.live/" 
           target="_blank" 
-          rel="noreferrer">Cloud Builder Live - February 2022</a>
+          rel="noreferrer">Cloud Builder Live - March 2022</a>
       </div>
       <div className="logos">
         <a href="https://pluralsight.com/"
