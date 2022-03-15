@@ -1,0 +1,9 @@
+{
+  "name": "cdk-sample-webapp",
+  "private": true,
+  "workspaces": [
+    "webapp",
+    "infrastructure",
+    "services/*"
+  ]
+}
