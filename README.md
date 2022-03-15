@@ -26,7 +26,7 @@ To run the application in its initial state, you can clone the repository and th
 ```bash
 yarn
 cd webapp
-npm run start
+yarn start
 ```
 
 ## Client-Side App
